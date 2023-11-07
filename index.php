@@ -33,7 +33,8 @@
 
         /* On hover, change the background color of the links */
         .navbar a:hover {
-            background-color: #555;
+            /* background-color: #555; */
+            background-color:orangered;
         }
         body{
             
@@ -52,6 +53,63 @@
              /* align-items:center;  */
             color: #000;
             display:flex;
+            justify-content: space-around;
+            
+        }
+        .container1{
+            width:40%;
+            margin-top: 100px;
+            height: 250px;
+           
+        }
+        .container1 h1{
+            font-size: 40px;
+        }
+        .container1 span{
+            /* color:rgb(175, 48, 2); */
+            color:orangered;
+        }
+        .container1 p{
+            font-size:12px;
+        }
+        .container1 button{
+            color:whitesmoke;
+            /* background-color: orangered; */
+            background-color: rgb(68, 66, 66);
+            border:none;
+            margin-top: 3px;
+            margin-left: 7px;
+            height: 30px;
+            
+        }
+       
+        .container2{
+            width:40%;
+            margin-top:100px;
+            border:1px solid rgb(68, 66, 66);
+            background-color: rgb(68, 66, 66);
+            color:whitesmoke;
+            height: 250px;
+            padding:10px;
+        }
+        .container2 form input{
+            margin: 5px 7px;
+            text-align:center;
+            
+        }
+        .container2 p{
+            margin: 0 7px;
+            font-size: 12px;
+            text-align:justify;
+        }
+        .container2 button{
+            color:whitesmoke;
+            background-color: orangered;
+            border:none;
+            margin-top: 3px;
+            margin-left: 7px;
+            height: 30px;
+            
         }
        
 
@@ -68,18 +126,23 @@
     </div>
     <div class='content-container'>
     <div class="container1">
-    <h1>Welcome to RAW Bank</h1>
+        <br>
+        <br>
+    <h1>Welcome to  <span>RAW</span> Bank</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempore nemo fugit.</p>
-    <span>Find out more</span>
+    <button>Find out more</button>
     </div>
     <div class="container2">
     <form>
-        <input type="text" placeholder="your name">
-        <input type="text" placeholder="your email">
-        <input type="text" placeholder="your phone">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione non quis omnis quos mollitia delectus tempore repudiandae recusandae illum. Fuga mollitia est consectetur illo error. Voluptatem hic dolor delectus sed.
-        <button>Submit</button>
+        <input type="text" placeholder="your name" size="30">
+        <input type="text" placeholder="your email" size='30'>
+        <input type="text" placeholder="your phone" size='30'>
+        <br>
     </form>
+    <br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione non quis omnis quos mollitia delectus tempore repudiandae recusandae illum. Fuga mollitia est consectetur illo error. Voluptatem hic dolor delectus sed.</p> <br>
+        <button>Submit</button>
+    
     </div>
     </div>
     <!-- Your page content goes here -->

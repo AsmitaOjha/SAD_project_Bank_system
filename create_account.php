@@ -47,7 +47,7 @@ function generateAccountNumber() {
 
             /* On hover, change the background color of the links */
             .navbar a:hover {
-                background-color: #555;
+                background-color:orangered;
             }
  </style>
 </head>
