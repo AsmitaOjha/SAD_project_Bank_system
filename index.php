@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bank</title>
-</head>
-<!DOCTYPE html>
-<html>
+
+
 <head>
     <style>
         /* Style for the navigation bar */
@@ -119,7 +118,7 @@
         }
 
        /* Style for larger screens, e.g., desktops and tablets */
-@media (min-width: 768px) {
+@media (max-width: 900px) {
     .navbar {
         /* Add your desktop styles here */
     }
@@ -138,6 +137,7 @@
     /* Adjust the input field width for smaller screens */
     input[type="text"] {
         width: 250px;
+        /* width: 100%; */
          /* Make the input fields span the full width */
          height: 30px;
     }
