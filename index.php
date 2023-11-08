@@ -93,12 +93,12 @@
             padding:10px;
         }
         .container2 form input{
-            margin: 5px 7px;
+          margin: 5px 55px;
             text-align:center;
             
         }
         .container2 p{
-            margin: 0 7px;
+            margin: 0 55px;
             font-size: 12px;
             text-align:justify;
         }
@@ -107,10 +107,16 @@
             background-color: orangered;
             border:none;
             margin-top: 3px;
-            margin-left: 7px;
+            margin-left: 55px;
             height: 30px;
             
         }
+                /* Apply styles to increase the height of text input */
+        input[type="text"]{
+            height: 30px; /* You can adjust the height as needed */
+            width: 400px;
+        }
+
        
 
     </style>
@@ -134,9 +140,10 @@
     </div>
     <div class="container2">
     <form>
-        <input type="text" placeholder="your name" size="30">
-        <input type="text" placeholder="your email" size='30'>
-        <input type="text" placeholder="your phone" size='30'>
+   
+        <input type="text" placeholder="your name" >
+        <input type="text" placeholder="your email" >
+        <input type="text" placeholder="your phone" >
         <br>
     </form>
     <br>
