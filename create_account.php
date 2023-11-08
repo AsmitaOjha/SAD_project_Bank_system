@@ -33,11 +33,14 @@ function generateAccountNumber() {
                 overflow: hidden;
                 display:flex;
                 justify-content: center;
+                position: fixed; /* Add position: fixed to make the navigation bar fixed */ 
+                width: 100%; /* Make the navigation bar span the full width of the viewport */
+                top: 0; /* Position it at the top of the viewport */
+                z-index: 1000; /* Ensure it's above other elements */
             }
 
             /* Style for the navigation bar links */
             .navbar a {
-                
                 display: block;
                 color: white;
                 text-align: center;
@@ -49,6 +52,45 @@ function generateAccountNumber() {
             .navbar a:hover {
                 background-color:orangered;
             }
+            body{
+            
+            font-family:Arial, sans-serif;
+            margin:0;
+            padding:0;
+            overflow-y: auto;
+        }
+            .container{
+            background:linear-gradient(to bottom, rgba(66, 67, 60, 0.2), rgba(55, 55, 55, 0.8)),url('dollar tree.jpg') no-repeat center fixed;
+            background-size:cover;
+            width:100%;
+            height:100vh;
+            color: #000;
+            padding-top:30px;
+            /* padding-left: 50px; */
+            align-items:center;
+            
+            }
+        .container1{
+            /* border: 3px solid black; */
+           margin: 20px 40px;
+            display:flex;
+            flex-direction: column;
+            padding: 10px 20px;
+        }
+        form input{
+            margin: 5px 0px;
+        }
+        button{
+            color:whitesmoke;
+            background-color: orangered;
+            border:none;
+            margin-top: 3px;
+            margin-left: 55px;
+            height: 30px;
+        }
+        button:active{
+            background-color: gray;
+        }
  </style>
 </head>
 <body>
@@ -59,19 +101,23 @@ function generateAccountNumber() {
         <a href="transfer.php">Transfer</a>
         <a href="withdraw.php">Withdraw</a>
     </div>
+<div class="container">
+    <div class="container1">
     <h1>Create Account</h1>
     <form method="post" action="">
         <label for="account_holder">Account Holder Name:</label>
         <input type="text" id="account_holder" name="account_holder" required>
-
+            <br>
         <label for="phone_number">Phone Number:</label>
         <input type="text" id="phone_number" name="phone_number" required>
-
+            <br>
         <label for="initial_balance">Initial Balance:</label>
         <input type="text" id="initial_balance" name="initial_balance" required>
-
+            <br>
         <button type="submit">Create Account</button>
     </form>
+    </div>
+ </div>
     <?php
     // Handle form submission
     if ($_SERVER["REQUEST_METHOD"] == "POST") {

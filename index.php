@@ -15,7 +15,7 @@
             /* overflow: hidden; */
             display:flex;
             justify-content: center;
-            /* position: fixed; Add position: fixed to make the navigation bar fixed */
+            position: fixed; /* Add position: fixed to make the navigation bar fixed */ 
             width: 100%; /* Make the navigation bar span the full width of the viewport */
             top: 0; /* Position it at the top of the viewport */
             z-index: 1000; /* Ensure it's above other elements */
@@ -54,6 +54,7 @@
             color: #000;
             display:flex;
             justify-content: space-around;
+            padding:3px;
             
         }
         .container1{
@@ -117,7 +118,102 @@
             width: 400px;
         }
 
-       
+       /* Style for larger screens, e.g., desktops and tablets */
+@media (min-width: 768px) {
+    .navbar {
+        /* Add your desktop styles here */
+    }
+
+    
+
+    .container1 {
+        /* Add your desktop styles here */
+    }
+
+    .container2 {
+        /* Add your desktop styles here */
+
+    }
+
+    /* Adjust the input field width for smaller screens */
+    input[type="text"] {
+        width: 250px;
+         /* Make the input fields span the full width */
+         height: 30px;
+    }
+   
+    .container2 form input{
+          margin: 3px 40px;
+            text-align:center;
+            
+        }
+        .container2 p{
+            margin: 0 40px;
+            font-size: 11px;
+            text-align:justify;
+        }
+        .container2 button{
+            color:whitesmoke;
+            background-color: orangered;
+            border:none;
+            margin-top: 2px;
+            margin-left: 40px;
+            height: 25px;
+            
+        }
+}
+
+/* Style for smaller screens, e.g., mobile phones */
+@media (max-width: 767px) {
+    .navbar {
+        /* Add your mobile styles here */
+        /* For example, display the navigation links vertically */
+        flex-direction: row;
+    }
+
+    
+
+    .container1 {
+        /* Add your mobile styles here */
+        width:40%;
+            margin-top: 80px;
+            height: 250px;
+    }
+
+    .container2 {
+        /* Add your mobile styles here */
+        width:40%;
+        margin-top:120px;
+    }
+
+    /* Adjust the input field width for smaller screens */
+    input[type="text"] {
+        width: 120px;
+         /* Make the input fields span the full width */
+         height: 20px;
+    }
+   
+    .container2 form input{
+          margin: 3px 40px;
+            text-align:center;
+            
+        }
+        .container2 p{
+            margin: 0 45px;
+            font-size: 9px;
+            text-align:justify;
+        }
+        .container2 button{
+            color:whitesmoke;
+            background-color: orangered;
+            border:none;
+            margin-top: 2px;
+            margin-left: 45px;
+            height: 20px;
+            
+        }
+}
+
 
     </style>
 </head>
@@ -139,15 +235,15 @@
     <button>Find out more</button>
     </div>
     <div class="container2">
-    <form>
+        <form>
    
-        <input type="text" placeholder="your name" >
-        <input type="text" placeholder="your email" >
-        <input type="text" placeholder="your phone" >
+        <input type="text" placeholder="your name" > 
+        <input type="text" placeholder="your email" > 
+        <input type="text" placeholder="your phone" > 
         <br>
-    </form>
-    <br>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione non quis omnis quos mollitia delectus tempore repudiandae recusandae illum. Fuga mollitia est consectetur illo error. Voluptatem hic dolor delectus sed.</p> <br>
+        </form>
+        <br>
+        <p class="second_para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione non quis omnis quos mollitia delectus tempore repudiandae recusandae illum. Fuga mollitia est consectetur illo error. Voluptatem hic dolor delectus sed.</p> <br>
         <button>Submit</button>
     
     </div>
