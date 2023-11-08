@@ -67,6 +67,8 @@ function isValidAccount($account_number, $conn) {
             overflow-y: auto;
         }
         .container{
+            background:linear-gradient(to bottom, rgba(66, 67, 60, 0.2), rgba(55, 55, 55, 0.8)),url('deposit.jpg') repeat center fixed;
+            background-size:cover;
             width:100%;
             height:100vh;
             color: #000;

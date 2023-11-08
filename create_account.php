@@ -60,7 +60,7 @@ function generateAccountNumber() {
             overflow-y: auto;
         }
             .container{
-            background:linear-gradient(to bottom, rgba(66, 67, 60, 0.2), rgba(55, 55, 55, 0.8)),url('dollar tree.jpg') no-repeat center fixed;
+            background:linear-gradient(to bottom, rgba(66, 67, 60, 0.2), rgba(55, 55, 55, 0.8)),url('dollar tree.jpg') repeat center fixed;
             background-size:cover;
             width:100%;
             height:100vh;
